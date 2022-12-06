@@ -8,14 +8,12 @@ main {
   }
   aside {
     flex: 1 0 10%;
-    font-size: 18px;
+    font-size: 20px;
     background: transparent;
     padding: 1rem;
   }
   .wrapper {
     display: flex;
-    height: 100%;
-    width: 15%;
     justify-content: left;
     align-items: flex-start;
   }

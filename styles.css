@@ -15,14 +15,14 @@ main {
   }
   .wrapper {
     display: flex;
-    height: 30%;
+    height: 100%;
     width: 15%;
     justify-content: right;
     align-items: flex-end;
   }
 
 #main {
-    background-image: url('Media/background-image.png');
+    background-image: url('Media/new_pic-overlay.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }

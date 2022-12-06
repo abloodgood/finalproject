@@ -15,11 +15,10 @@ main {
   .wrapper {
     display: flex;
     justify-content: left;
-    align-items: flex-start;
   }
 
 #main {
-    background-image: url('Media/background-image.png');
+    background-image: url('Media/background_image.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }

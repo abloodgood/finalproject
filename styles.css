@@ -9,7 +9,7 @@ main {
   aside {
     flex: 1 0 10%;
     font-size: 18px;
-    background: lightpink;
+    background: transparent;
     padding: 1rem;
   }
   .wrapper {
@@ -21,7 +21,7 @@ main {
   }
 
 #main {
-    background-image: url('Media/new_pic-overlay.png');
+    background-image: url('Media/background-image.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }

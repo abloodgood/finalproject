@@ -1,3 +1,19 @@
+body {
+    overflow: hidden;
+    height: 100vh;
+}
+
+main {
+    overflow-y: auto;
+  }
+  aside {
+    flex: 1 0 10%;
+  }
+  .wrapper {
+    display: flex;
+    height: 100%;
+  }
+
 #main {
     background-image: url('Media/background-image.png');
     background-repeat: no-repeat;

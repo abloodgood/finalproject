@@ -9,7 +9,6 @@ main {
   aside {
     flex: 1 0 10%;
     font-size: 18px;
-    border-right:  1px solid #ededed;
     background: lightpink;
     padding: 1rem;
   }
@@ -17,8 +16,8 @@ main {
     display: flex;
     height: 100%;
     width: 15%;
-    justify-content: right;
-    align-items: flex-end;
+    justify-content: left;
+    align-items: flex-start;
   }
 
 #main {

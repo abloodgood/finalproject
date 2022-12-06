@@ -28,6 +28,12 @@ main {
     list-style: none;
 }
 
+#profile-pic {
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column;
+}
+
 /*link styles*/
 a:link,
 a:visited {

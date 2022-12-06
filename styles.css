@@ -10,14 +10,15 @@ main {
     flex: 1 0 10%;
     font-size: 18px;
     border-right:  1px solid #ededed;
-    background: pink;
-    flex: 1 0 10%;
+    background: lightpink;
     padding: 1rem;
   }
   .wrapper {
     display: flex;
     height: 30%;
     width: 15%;
+    justify-content: right;
+    align-items: flex-end;
   }
 
 #main {

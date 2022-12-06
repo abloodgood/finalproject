@@ -16,6 +16,12 @@ main {
     display: flex;
     justify-content: left;
   }
+  .image-wrapper {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column;
+  }
 
 #main {
     background-image: url('Media/background_image.png');
@@ -28,9 +34,8 @@ main {
 }
 
 #profile-pic {
-    align-items: center; 
-    justify-content: center; 
-    flex-direction: column;
+    text-align: center; 
+    margin: 5% auto;
 }
 
 /*link styles*/

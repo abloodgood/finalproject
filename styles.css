@@ -2,7 +2,6 @@
     background-image: url('Media/background-image.png');
     background-repeat: no-repeat;
     width: auto;
-    height: auto;
   }
 
 .bottomnav-right {
@@ -10,5 +9,7 @@
   right: 10%;
   bottom: 5%;
   display: inline-block;
-  background-color: antiquewhite;
+  padding: 10px 15px;
+  font-size: 18px;
+  background-color: pink;
 }

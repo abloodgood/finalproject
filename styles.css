@@ -8,9 +8,11 @@ main {
   }
   aside {
     flex: 1 0 10%;
-    padding: 10px 15px;
     font-size: 18px;
-    background-color: pink;
+    border-right:  1px solid #ededed;
+    background: pink;
+    flex: 1 0 10%;
+    padding: 1rem;
   }
   .wrapper {
     display: flex;

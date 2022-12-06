@@ -37,6 +37,7 @@ main {
     text-align: center; 
     margin: 5% auto;
     box-shadow: 0 0 8px 8px rgb(250, 252, 222) inset;
+    font-family: Garamond, 'Courier New', Courier, monospace;
 }
 
 /*link styles*/

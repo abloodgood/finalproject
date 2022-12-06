@@ -1,5 +1,4 @@
 #main {
-    background-image: url('Media/background-image.jpg') no-repeat center center fixed;
-    background-repeat: no-repeat;
+    background-image: url('Media/background-image.jpg');
     background-size: cover;
   }

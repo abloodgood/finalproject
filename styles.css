@@ -23,16 +23,6 @@ main {
     background-size: 100% 100%;
   }
 
-.bottomnav-right {
-  position: absolute; 
-  right: 10%;
-  bottom: 5%;
-  display: inline-block;
-  padding: 10px 15px;
-  font-size: 18px;
-  background-color: pink;
-}
-
 /*link styles*/
 a:link,
 a:visited {

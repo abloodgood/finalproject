@@ -23,6 +23,13 @@ main {
     flex-direction: column;
   }
 
+.container {
+    max-width: 1400px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 #main {
     background-image: url('Media/background_image.png');
     background-repeat: no-repeat;

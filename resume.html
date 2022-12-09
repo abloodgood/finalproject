@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+				<meta charset="UTF-8">
+				<title>Resume</title>
+				<link href="styles.css" rel="stylesheet">
+		</head>
+		<body>
+            <div class="wrapper">
+                <nav>
+                <ul id="nav">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutme.html">About Me</a></li>
+                    <li><a href="./resume.html">Resume</a></li>
+                    <li><a href="#">My Favorite Places</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+                </nav>
+            </div>
+			<!-- empty div to add fetched json data to -->
+			<div id="jsonData">
+			</div>
+			<!-- define a class for the button to fetch the json degree data -->
+			<div class="button">
+				<button id="getResume" onclick="getResume()">Get Resume</button>
+			</div>
+
+		<script>
+			function getResume() {
+				/*fetch json file*/
+				fetch('https://abloodgood.github.io/finalproject/resume_data.json')
+				.then(response => response.json())
+				//if successful, continue
+				.then(data => {
+					//get the empty div "jsonData" to add fetched data to
+					var mainContainer = document.getElementById("jsonData");
+
+					//for each degree from the json file
+					for (var i = 0; i < data.Degrees.length; i++) {
+						//create a div and add the class "degree" to it
+						var div = document.createElement("div");
+						div.classList.add("degree");
+
+						//create a string literal for the inner HTML to add
+						const degreeHTML = `
+						<b>School:</b> ${data.Degrees[i].school} <br>
+						<b>Major:</b> ${data.Degrees[i].major} <br>
+						<b>Type:</b> ${data.Degrees[i].type} <br>
+						<b>Year Conferred:</b> ${data.Degrees[i].year}
+						`;
+						div.innerHTML = degreeHTML;
+
+						//append the new div to jsonData
+						mainContainer.appendChild(div);
+					}
+                    //for each degree from the json file
+					for (var i = 0; i < data.Jobs.length; i++) {
+						//create a div and add the class "degree" to it
+						var div = document.createElement("div");
+						div.classList.add("jobs");
+
+						//create a string literal for the inner HTML to add
+						const jobsHTML = `
+						<b>Company:</b> ${data.Jobs[i].company} <br>
+						<b>Years:</b> ${data.Jobs[i].year_started} - ${data.Jobs[i].year_ended} <br>
+						<b>Location:</b> ${data.Jobs[i].locations} <br>
+						<b>Responsibilities:</b> ${data.Jobs[i].tasks}
+						`;
+						div.innerHTML = jobsHTML;
+
+						//append the new div to jsonData
+						mainContainer.appendChild(div);
+					}
+				})
+				//catch any errors and print to console
+				.catch(error => {
+					console.error('Error Encountered: ', error);
+				});
+			}
+
+			//get the "go" button
+			const go_button = document.getElementById('getResume');
+
+			//listen for the "onClick" event, once clicked change the color of the button
+			go_button.addEventListener('click', function onClick() {
+			go_button.style.backgroundColor = 'black';
+			go_button.style.color = 'white';
+			});
+		</script>
+		</body>
+</html>

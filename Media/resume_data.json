@@ -25,22 +25,14 @@
             "year_started":2017,
             "year_ended":2022,
             "location":"Moorestown, NJ",
-            "tasks":["Design, data analysis, requirements development, modeling and simulation, and tactical testing of IAMD scenarios. \n",
-            "Design and implement test plans, scenarios, and procedures for regression and requirement verification on the tactical system. \n",
-            "Identify, analyze, and document problems with program function or output on the tactical system. \n",
-            "Research, test, and verify proper functioning of software fixes. \n",
-            "Resolve roadblocks to meet performance and financial goals, and ensure that the team has the right support from subject matter experts as necessary. "
-            ]
+            "tasks":"Design, data analysis, requirements development, modeling and simulation, and tactical testing of IAMD scenarios. \n Design and implement test plans, scenarios, and procedures for regression and requirement verification on the tactical system. \n Identify, analyze, and document problems with program function or output on the tactical system. \n Research, test, and verify proper functioning of software fixes. \n Resolve roadblocks to meet performance and financial goals, and ensure that the team has the right support from subject matter experts as necessary."
       },
       {
             "company":"Saab",
             "year_started":2022,
             "year_ended":"Current",
             "location":"East Syracuse, NY",
-            "tasks":["Identify, analyze, and document problems with existing customer requirements. \n",
-            "Research proper cybersecurity protocols for the system. \n",
-            "Write component requirement specifications. \n",
-            "Communicate project information through technical presentations."]
+            "tasks":"Identify, analyze, and document problems with existing customer requirements. \n Research proper cybersecurity protocols for the system. \n Write component requirement specifications. \n Communicate project information through technical presentations."
       }
     ],
     "Skills": [

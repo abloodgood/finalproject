@@ -1,116 +1,124 @@
 body {
-    background-image: url('Media/background_image.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url('Media/background_image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 p {
-  margin-left: 15px;
-  margin-right: 15px;
+margin-left: 15px;
+margin-right: 15px;
 }
 
 main {
-    overflow-y: auto;
-  }
-  .wrapper {
-    display: flex;
-    justify-content: left;
-  }
-  .image-wrapper {
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    flex-direction: column;
-  }
+  overflow-y: auto;
+}
+.wrapper {
+  display: flex;
+  justify-content: left;
+}
+.image-wrapper {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  flex-direction: column;
+}
 
 .container {
-    max-width: 1400px;
-    margin: auto;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  max-width: 1400px;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 nav {
-    display:flex;
-    align-items: center;
-    padding: 20px;
-    flex: 1;
-    text-align: right;
+  display:flex;
+  align-items: center;
+  padding: 20px;
+  flex: 1;
+  text-align: right;
 }
 
 nav ul {
-  display: inline-block;
-  list-style: none;
+display: inline-block;
+list-style: none;
 }
 
 nav ul li 
 {
-    display: inline-block;
-    margin-right: 50px;
-    color: black;
-    font-weight: 700;
-    font-size: 20px;
+  display: inline-block;
+  margin-right: 50px;
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 #profile-pic {
-    text-align: center; 
-    margin: auto;
+  text-align: center; 
+  margin: auto;
 }
 
 #about {
-  background-color: #f8edfb;
-  border-radius: 20px;
-  box-shadow: 0 3px 15px  #f8edfb;
-  margin: 10px;
-  padding: 10px;
-  text-align: center;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: column;
+background-color: #f8edfb;
+border-radius: 20px;
+box-shadow: 0 3px 15px  #f8edfb;
+margin: 10px;
+padding: 10px;
+text-align: center;
+display: flex;
+align-content: center;
+justify-content: center;
+flex-direction: column;
 }
 
 h1 {
-    font-size: 22px;
-    font-weight: bold;
-    font-family: cursive;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: cursive;
 }
 
 /*link styles*/
 a:link,
 a:visited {
-	color: black;
-	text-align: center;
-	text-decoration: underline white;
-	display: inline-block;
+color: black;
+text-align: center;
+text-decoration: underline white;
+display: inline-block;
 }
 
 a:hover {
-	background-color: white;
-	text-decoration: underline black;
-	color: black;
+background-color: white;
+text-decoration: underline black;
+color: black;
+}
+
+#jsonData_degrees {
+text-align: center;
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+}
+
+#jsonData_jobs {
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .degree {
-  background-color: #f5e3fa;
-  border-radius: 20px;
-  box-shadow: 0 3px 15px  #f5e3fa;
-  margin: 10px;
-  padding: 20px;
-  text-align: center;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+background-color: #f5e3fa;
+border-radius: 20px;
+box-shadow: 0 3px 15px  #f5e3fa;
+margin: 10px;
+padding: 20px;
+text-align: center;
 }
 
 .jobs {
-  background-color: #f5e3fa;
-  border-radius: 20px;
-  box-shadow: 0 3px 15px  #f5e3fa;
-  margin: 10px;
-  padding: 20px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+background-color: #e3ecfa;
+border-radius: 20px;
+box-shadow: 0 3px 15px  #e3ecfa;
+margin: 10px;
+padding: 20px;
+text-align: center;
 }

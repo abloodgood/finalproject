@@ -54,7 +54,7 @@ nav ul li
 
 #profile-pic {
     text-align: center; 
-    margin: 5% auto;
+    margin: auto;
 }
 
 #about {
@@ -62,7 +62,7 @@ nav ul li
   border-radius: 20px;
   box-shadow: 0 3px 15px  #f8edfb;
   margin: 10px;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   display: flex;
   align-content: center;

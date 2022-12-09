@@ -90,17 +90,30 @@ text-decoration: underline black;
 color: black;
 }
 
-  .column1, .column2, .column3 {
-    float: left;
-    width: 33.33%;
-  }
-
   /* Clear floats after the columns */
-  .row:after {
+  #resume_container:after {
     content: "";
     display: block;
     clear: both;
   }
+
+  #jsonData_degrees {
+    text-align: center;
+    float: left;
+    width: 33.33%;
+    }
+    
+    #jsonData_jobs {
+    text-align: center;
+    float:left;
+    width: 33.33%;
+    }
+    
+    #jsonData_skills {
+      text-align: center;
+      float: right;
+      width: 33.33%;
+    }
 
   .button {
     text-align: center;

@@ -18,7 +18,13 @@
                 </nav>
             </div>
 			<!-- empty div to add fetched json data to -->
-			<div id="jsonData" class="row">
+			<div id="resume_container">
+				<div id="jsonData_degrees">
+				</div>
+				<div id="jsonData_jobs">
+				</div>
+				<div id="jsonData_skills">
+				</div>
 			</div>
 			<!-- define a class for the button to fetch the json degree data -->
 			<div class="button">
@@ -33,13 +39,15 @@
 				//if successful, continue
 				.then(data => {
 					//get the empty div "jsonData" to add fetched data to
-					var mainContainer = document.getElementById("jsonData");
+					var mainContainer_deg = document.getElementById("jsonData_degrees");
+					var mainContainer_jobs = document.getElementById("jsonData_jobs");
+					var mainContainer_skill = document.getElementById("jsonData_skills");
 
 					//for each degree from the json file
 					for (var i = 0; i < data.Degrees.length; i++) {
 						//create a div and add the class "degree" to it
 						var div = document.createElement("div");
-						div.classList.add("column1");
+						div.classList.add("degree");
 
 						//create a string literal for the inner HTML to add
 						const degreeHTML = `
@@ -51,14 +59,14 @@
 						div.innerHTML = degreeHTML;
 
 						//append the new div to jsonData
-						mainContainer.appendChild(div);
+						mainContainer_deg.appendChild(div);
 					}
 
                     //for each job from the json file
 					for (var i = 0; i < data.Jobs.length; i++) {
 						//create a div and add the class "degree" to it
 						var div = document.createElement("div");
-						div.classList.add("column2");
+						div.classList.add("jobs");
 
 						//create a string literal for the inner HTML to add
 						const jobsHTML = `
@@ -70,13 +78,13 @@
 						div.innerHTML = jobsHTML;
 
 						//append the new div to jsonData
-						mainContainer.appendChild(div);
+						mainContainer_jobs.appendChild(div);
 					}
 
 					for (var i = 0; i < data.Skills.length; i++) {
 						//create a div and add the class "degree" to it
 						var div = document.createElement("div");
-						div.classList.add("column3");
+						div.classList.add("skill");
 
 						//create a string literal for the inner HTML to add
 						const skillsHTML = `
@@ -89,7 +97,7 @@
 						div.innerHTML = skillsHTML;
 
 						//append the new div to jsonData
-						mainContainer.appendChild(div);
+						mainContainer_skill.appendChild(div);
 					}
 				})
 				//catch any errors and print to console

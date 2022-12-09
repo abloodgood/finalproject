@@ -59,6 +59,15 @@ nav ul li
     margin: 5% auto;
 }
 
+#about {
+  background-color: #f5e3fa;
+  border-radius: 20px;
+  box-shadow: 0 3px 15px  #f5e3fa;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
 h1 {
     font-size: 22px;
     font-weight: bold;

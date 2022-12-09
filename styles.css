@@ -101,3 +101,27 @@ color: black;
     display: table;
     clear: both;
   }
+
+  .button {
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    padding-top: 100px;
+    margin: 0 auto;
+    font-weight: bold;
+  }
+  
+  button {
+    background-color: azure;
+    color: black;
+    border-radius: 8px;
+    height: 5rem;
+    width: 10rem;
+    border-style: none;
+    box-sizing: border-box;
+  }
+  
+  .button :hover {
+    background-color: #cccaca;
+    color: black;
+  }

@@ -51,7 +51,7 @@
 						div.innerHTML = degreeHTML;
 
 						//append the new div to jsonData
-						mainContainer_degrees.appendChild(div);
+						mainContainer.appendChild(div);
 					}
                     //for each job from the json file
 					for (var i = 0; i < data.Jobs.length; i++) {
@@ -69,7 +69,7 @@
 						div.innerHTML = jobsHTML;
 
 						//append the new div to jsonData
-						mainContainer_jobs.appendChild(div);
+						mainContainer.appendChild(div);
 					}
 
 					for (var i = 0; i < data.Skills.length; i++) {
@@ -88,7 +88,7 @@
 						div.innerHTML = skillsHTML;
 
 						//append the new div to jsonData
-						mainContainer_skills.appendChild(div);
+						mainContainer.appendChild(div);
 					}
 				})
 				//catch any errors and print to console

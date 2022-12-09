@@ -32,7 +32,7 @@
             "year_started":2022,
             "year_ended":"Current",
             "location":"East Syracuse, NY",
-            "tasks":"Identify, analyze, and document problems with existing customer requirements. Research proper cybersecurity protocols for the system. Write component requirement specifications. Communicate project information through technical presentations."
+            "tasks":"Identify, analyze, and document problems with existing customer requirements. \r Research proper cybersecurity protocols for the system. Write component requirement specifications. Communicate project information through technical presentations."
       }
     ],
     "Skills": [
@@ -41,7 +41,6 @@
             "skill2":"Agile Methodology",
             "skill3":"Python",
             "skill4":"Matlab"
-
       }
     ]
     

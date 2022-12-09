@@ -39,7 +39,7 @@
 					for (var i = 0; i < data.Degrees.length; i++) {
 						//create a div and add the class "degree" to it
 						var div = document.createElement("div");
-						div.classList.add("column");
+						div.classList.add("column1");
 
 						//create a string literal for the inner HTML to add
 						const degreeHTML = `
@@ -53,12 +53,12 @@
 						//append the new div to jsonData
 						mainContainer.appendChild(div);
 					}
-					
+
                     //for each job from the json file
 					for (var i = 0; i < data.Jobs.length; i++) {
 						//create a div and add the class "degree" to it
 						var div = document.createElement("div");
-						div.classList.add("column");
+						div.classList.add("column2");
 
 						//create a string literal for the inner HTML to add
 						const jobsHTML = `
@@ -76,7 +76,7 @@
 					for (var i = 0; i < data.Skills.length; i++) {
 						//create a div and add the class "degree" to it
 						var div = document.createElement("div");
-						div.classList.add("column");
+						div.classList.add("column3");
 
 						//create a string literal for the inner HTML to add
 						const skillsHTML = `

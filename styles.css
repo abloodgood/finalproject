@@ -90,11 +90,11 @@ text-decoration: underline black;
 color: black;
 }
 
-  .column {
+  .column1, .column2, .column3 {
     float: left;
     width: 33.33%;
   }
-  
+
   /* Clear floats after the columns */
   .row:after {
     content: "";

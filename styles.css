@@ -98,7 +98,7 @@ color: black;
   /* Clear floats after the columns */
   .row:after {
     content: "";
-    display: table;
+    display: block;
     clear: both;
   }
 

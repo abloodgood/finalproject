@@ -22,13 +22,13 @@
 			</div>
 			<!-- define a class for the button to fetch the json degree data -->
 			<div class="button">
-				<button id="getResume" onclick="getResume()">Get Resume</button>
+				<button id="getresume" onclick="getResume()">Get Resume</button>
 			</div>
 
 		<script>
 			function getResume() {
 				/*fetch json file*/
-				fetch('https://abloodgood.github.io/finalproject/resume_data.json')
+				fetch('https://abloodgood.github.io/finalproject/Media/resume_data.json')
 				.then(response => response.json())
 				//if successful, continue
 				.then(data => {
@@ -79,7 +79,7 @@
 			}
 
 			//get the "go" button
-			const go_button = document.getElementById('getResume');
+			const go_button = document.getElementById('getresume');
 
 			//listen for the "onClick" event, once clicked change the color of the button
 			go_button.addEventListener('click', function onClick() {

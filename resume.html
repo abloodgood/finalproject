@@ -59,6 +59,8 @@
 						var div = document.createElement("div");
 						div.classList.add("jobs");
 
+                        console.log(data.Jobs.tasks.length);
+
 						//create a string literal for the inner HTML to add
 						const jobsHTML = `
 						<b>Company:</b> ${data.Jobs[i].company} <br>

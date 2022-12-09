@@ -1,0 +1,22 @@
+{
+    "Degrees":[
+       {
+             "school":"Drew University",
+             "major":"Physics",
+             "type":"BA",
+             "year":2017
+       },
+       {
+             "school":"University of Massachusetts",
+             "major":"Information Technology",
+             "type":"BS",
+             "year":2021
+       },
+       {
+             "school":"Boston University",
+             "major":"Software Development",
+             "type":"MS",
+             "year":2024
+       }
+    ]
+ }

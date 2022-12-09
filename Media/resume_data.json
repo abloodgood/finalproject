@@ -25,14 +25,14 @@
             "year_started":2017,
             "year_ended":2022,
             "location":"Moorestown, NJ",
-            "tasks":"Design, data analysis, requirements development, modeling and simulation, and tactical testing of IAMD scenarios. \r Design and implement test plans, scenarios, and procedures for regression and requirement verification on the tactical system. \r Identify, analyze, and document problems with program function or output on the tactical system. \r Research, test, and verify proper functioning of software fixes. \r Resolve roadblocks to meet performance and financial goals, and ensure that the team has the right support from subject matter experts as necessary."
+            "tasks":"Design, data analysis, requirements development, modeling and simulation, and tactical testing of IAMD scenarios. Design and implement test plans, scenarios, and procedures for regression and requirement verification on the tactical system. Identify, analyze, and document problems with program function or output on the tactical system. Research, test, and verify proper functioning of software fixes. Resolve roadblocks to meet performance and financial goals, and ensure that the team has the right support from subject matter experts as necessary."
       },
       {
             "company":"Saab",
             "year_started":2022,
             "year_ended":"Current",
             "location":"East Syracuse, NY",
-            "tasks":"Identify, analyze, and document problems with existing customer requirements. \r Research proper cybersecurity protocols for the system. \r Write component requirement specifications. \r Communicate project information through technical presentations."
+            "tasks":"Identify, analyze, and document problems with existing customer requirements. Research proper cybersecurity protocols for the system. Write component requirement specifications. Communicate project information through technical presentations."
       }
     ],
     "Skills": [

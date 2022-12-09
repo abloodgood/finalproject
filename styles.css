@@ -111,10 +111,23 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 margin: auto;
-width: 500px;
+width: 300px;
 background-color: #e3ecfa;
 border-radius: 20px;
 box-shadow: 0 3px 15px  #e3ecfa;
 margin: 10px;
 padding: 20px;
 }
+
+#jsonData_skills {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background-color: #f3fae3;
+  border-radius: 20px;
+  box-shadow: 0 3px 15px  #f3fae3;
+  margin: 10px;
+  padding: 20px;
+  }

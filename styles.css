@@ -90,36 +90,14 @@ text-decoration: underline black;
 color: black;
 }
 
-#jsonData_degrees {
-text-align: center;
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-width:250px;
-justify-content: flex-start;
-margin: 10px;
-padding: 20px;
-}
-
-#jsonData_jobs {
-text-align: center;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-margin: auto;
-width: 500px;
-margin: 10px;
-padding: 20px;
-}
-
-#jsonData_skills {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
-  width: 250px;
-  margin: 10px;
-  padding: 20px;
+  .column {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
   }

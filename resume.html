@@ -20,17 +20,16 @@
 			<!-- empty div to add fetched json data to -->
 			<div id="resume_container">
 				<div id="jsonData_degrees">
-					<!-- define a class for the button to fetch the json degree data -->
-					<div class="button">
-						<button id="getresume" onclick="getResume()">Get Resume</button>
-					</div>
 				</div>
 				<div id="jsonData_jobs">
 				</div>
 				<div id="jsonData_skills">
 				</div>
 			</div>
-
+			<!-- define a class for the button to fetch the json degree data -->
+			<div class="button">
+				<button id="getresume" onclick="getResume()">Get Resume</button>
+			</div>
 
 		<script>
 			function getResume() {
@@ -110,10 +109,9 @@
 			//get the "go" button
 			const go_button = document.getElementById('getresume');
 
-			//listen for the "onClick" event, once clicked change the color of the button
+			//listen for the "onClick" event
 			go_button.addEventListener('click', function onClick() {
-			go_button.style.backgroundColor = 'black';
-			go_button.style.color = 'white';
+			go_button.style.display = 'none';
 			});
 		</script>
 		</body>

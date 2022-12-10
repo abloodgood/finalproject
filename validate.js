@@ -8,11 +8,9 @@ function checkvalue(val)
 
 function validateForm() 
 {
-
-    emailRegExp = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     email = document.getElementById("email");
 
-    if (!emailRegExp.test(email)) {
+    if (!(/(.+)@(.+){2,}\.(.+){2,}/.test(email))) {
         alert("Please enter a valid email address.")
         email.style.borderColor = "red";
         return false;

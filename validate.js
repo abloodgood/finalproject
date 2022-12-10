@@ -8,20 +8,19 @@ function checkvalue(val)
 
 function validateForm() 
 {	
-	var name = document.getElementById("name");
+	var contact_name = document.getElementById("name");
 	/*Check to make sure first and last name are both over 2 characters*/
-	if (name.value.length <= 2) {
+	if (contact_name.value.length < 2) {
 		Alert("Name must contain two or more characters!");
-		name.style.borderColor = "red";
+		contact_name.style.borderColor = "red";
 		return false;
 	}
 		
 	/*use reg ex to test if first or last name have anything other than letters*/
 	var letters = /^[a-zA-Z]+$/;
-	if (!letters.test(name.value)) {
+	if (!letters.test(contact_name.value)) {
 		alert("Names can only contain letters!");
-		firstName.style.borderColor = "red";
-		lastName.style.borderColor = "red";
+		contact_name.style.borderColor = "red";
 		return false;
 	}
     var phone = document.getElementById("phone");

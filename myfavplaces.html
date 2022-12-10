@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+				<meta charset="UTF-8">
+				<title>Favorite Places</title>
+				<link href="styles.css" rel="stylesheet">
+		</head>
+		<body>
+            <div class="wrapper">
+                <nav>
+                <ul id="nav">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutme.html">About Me</a></li>
+                    <li><a href="./resume.html">Resume</a></li>
+                    <li><a href="#">My Favorite Places</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+                </nav>
+            </div>
+
+            <div id="app">
+                <div id="image-wrapper">
+                    <img src="Media/tower.jpg" alt="The Tower Bridge in London">
+                    <img src="Media/eiffel.jpg" alt="The Eiffel Tower behind buildings">
+                    <img src="Media/bearMtn.jpg" alt="Bear Mountain, New York">
+                    <img src="Media/rafting.jpg" alt="Rafting the Penobscot River in Maine">
+
+                    <div id="moreImages">
+                        <button v-on:click.once="addMore()">View More</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Include Vue-->
+            <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+            
+            <!--Create Vue instance-->
+            <script>
+                var app = new Vue({
+                    el: '#app',
+                    //define image paths and hover variables
+                    data: {
+                        img1 : "Media/keywest.jpg",
+                        img2 : "Media/moosehead.jpg",
+                        img3 : "Media/MK.jpg"
+                    },
+                    methods : {
+                        addMore() {
+                            var container = document.getElementById("moreImages");
+
+                            const imgHTML = `
+                            <img :src="img1" alt="Key West at Night">
+                            <img :src="img2" alt="Moosehead Lake at Sunset">
+                            <img :src="img3" alt="Magic Kingdom at Night">
+                            `;
+
+                            container.innerHTML = imgHTML;
+                        }    
+                    }
+                })
+             </script>
+        </body>
+</html>

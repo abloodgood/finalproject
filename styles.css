@@ -58,6 +58,13 @@ main {
   flex-direction: column;
 }
 
+#form-wrapper {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  flex-direction: column;
+}
+
 #favPlace img{
   width: 500px;
   margin-bottom: 10px;

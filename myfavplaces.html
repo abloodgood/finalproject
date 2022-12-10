@@ -49,9 +49,9 @@
                             var container = document.getElementById("moreImages");
 
                             const imgHTML = `
-                            <img :src="img1" alt="Key West at Night">
-                            <img :src="img2" alt="Moosehead Lake at Sunset">
-                            <img :src="img3" alt="Magic Kingdom at Night">
+                            <img :src="{{img1}}" alt="Key West at Night">
+                            <img :src="{{img2}}" alt="Moosehead Lake at Sunset">
+                            <img :src="{{img3}}" alt="Magic Kingdom at Night">
                             `;
 
                             container.innerHTML = imgHTML;

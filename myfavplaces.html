@@ -21,9 +21,13 @@
             <div id="app">
                 <div class="image-wrapper" id="favPlace">
                     <img src="Media/tower.jpg" alt="The Tower Bridge in London">
+                    <h2>Tower Bridge, London UK, November 2022</h2>
                     <img src="Media/eiffel.jpg" alt="The Eiffel Tower behind buildings">
+                    <h2>Eiffel Tower, Paris France, November 2022</h2>
                     <img src="Media/bearMtn.jpg" alt="Bear Mountain, New York">
+                    <h2>Bear Mountain, New York, October 2022</h2>
                     <img src="Media/rafting.jpg" alt="Rafting the Penobscot River in Maine">
+                    <h2>Penobscot River, Maine, July 2021</h2>
 
                     <div id="moreImages">
                         <button v-on:click.once="addMore()">View More</button>
@@ -47,8 +51,11 @@
 
                             const imgHTML = `
                             <img src="Media/keywest.jpg" alt="Key West at Night">
+                            <h2>Key West, Florida, March 2019</h2>
                             <img src="Media/moosehead.jpg" alt="Moosehead Lake at Sunset">
+                            <h2>Moosehead Lake, Maine, July 2021</h2>
                             <img src="Media/MK.jpg" alt="Magic Kingdom at Night">
+                            <h2>Magic Kingdom, Orlando Florida, January 2022</h2>
                             `;
 
                             container.innerHTML = imgHTML;

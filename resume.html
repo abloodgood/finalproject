@@ -20,16 +20,17 @@
 			<!-- empty div to add fetched json data to -->
 			<div id="resume_container">
 				<div id="jsonData_degrees">
+					<!-- define a class for the button to fetch the json degree data -->
+					<div class="button">
+						<button id="getresume" onclick="getResume()">Get Resume</button>
+					</div>
 				</div>
 				<div id="jsonData_jobs">
 				</div>
 				<div id="jsonData_skills">
 				</div>
 			</div>
-			<!-- define a class for the button to fetch the json degree data -->
-			<div class="button">
-				<button id="getresume" onclick="getResume()">Get Resume</button>
-			</div>
+
 
 		<script>
 			function getResume() {

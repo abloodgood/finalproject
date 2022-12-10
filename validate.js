@@ -15,6 +15,7 @@ function validateForm()
     if (!emailRegExp.test(email)) {
         alert("Please enter a valid email address.")
         email.style.borderColor = "red";
+        return false;
     }
     else {
         return true;

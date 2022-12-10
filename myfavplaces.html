@@ -40,18 +40,15 @@
                     el: '#app',
                     //define image paths and hover variables
                     data: {
-                        img1 : "./Media/keywest.jpg",
-                        img2 : "./Media/moosehead.jpg",
-                        img3 : "./Media/MK.jpg"
                     },
                     methods : {
                         addMore() {
                             var container = document.getElementById("moreImages");
 
                             const imgHTML = `
-                            <img :src="{{img1}}" alt="Key West at Night">
-                            <img :src="{{img2}}" alt="Moosehead Lake at Sunset">
-                            <img :src="{{img3}}" alt="Magic Kingdom at Night">
+                            <img src="Media/keywest.jpg" alt="Key West at Night">
+                            <img src="Media/moosehead.jpg" alt="Moosehead Lake at Sunset">
+                            <img src="Media/MK.jpg" alt="Magic Kingdom at Night">
                             `;
 
                             container.innerHTML = imgHTML;

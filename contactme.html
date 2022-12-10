@@ -32,16 +32,17 @@
             <label for="email">Email:</label><br>
             <input type="text" id="email" name="email"><br>
 
-            
 
-            <select name="contactType" onchange='checkvalue(this.value)'> 
-                <option>Contact Type: </option>  
-                <option value="op">Job Opportunity</option>
-                <option value="network">Networking</option>
-                <option value="general">General</option>
-                <option value="other">Other (Enter Below)</option>
-            </select> 
-            <input type="text" name="contactType" id="contactOther" style='display:none'/>
+            <div id="selector">
+                <select name="contactType" onchange='checkvalue(this.value)'> 
+                    <option>Contact Type: </option>  
+                    <option value="op">Job Opportunity</option>
+                    <option value="network">Networking</option>
+                    <option value="general">General</option>
+                    <option value="other">Other (Enter Below)</option>
+                </select> 
+                <input type="text" name="contactType" id="contactOther" style='display:none'/>
+            </div>
 
 
             <input type="submit" name="submitButton" value="Submit">

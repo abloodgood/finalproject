@@ -8,5 +8,15 @@ function checkvalue(val)
 
 function validateForm() 
 {
-    return true;
+
+    emailRegExp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    email = document.getElementById("email");
+
+    if (!emailRegExp.test(email)) {
+        alert("Please enter a valid email address.")
+        email.style.borderColor = "red";
+    }
+    else {
+        return true;
+    }
 }

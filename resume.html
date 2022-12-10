@@ -17,7 +17,7 @@
                 </ul>
                 </nav>
             </div>
-			<!-- empty div to add fetched json data to -->
+			<!-- empty divs to add fetched json data to -->
 			<div id="resume_container">
 				<div id="jsonData_degrees">
 				</div>
@@ -33,12 +33,12 @@
 
 		<script>
 			function getResume() {
-				/*fetch json file*/
+				//fetch json file
 				fetch('https://abloodgood.github.io/finalproject/Media/resume_data.json')
 				.then(response => response.json())
 				//if successful, continue
 				.then(data => {
-					//get the empty div "jsonData" to add fetched data to
+					//get the empty divs to add fetched data to
 					var mainContainer_deg = document.getElementById("jsonData_degrees");
 					var mainContainer_jobs = document.getElementById("jsonData_jobs");
 					var mainContainer_skill = document.getElementById("jsonData_skills");
@@ -64,7 +64,7 @@
 
                     //for each job from the json file
 					for (var i = 0; i < data.Jobs.length; i++) {
-						//create a div and add the class "degree" to it
+						//create a div and add the class "jobs" to it
 						var div = document.createElement("div");
 						div.classList.add("jobs");
 
@@ -82,7 +82,7 @@
 					}
 
 					for (var i = 0; i < data.Skills.length; i++) {
-						//create a div and add the class "degree" to it
+						//create a div and add the class "skill" to it
 						var div = document.createElement("div");
 						div.classList.add("skill");
 
@@ -106,12 +106,11 @@
 				});
 			}
 
-			//get the "go" button
-			const go_button = document.getElementById('getresume');
+			const get_button = document.getElementById('getresume');
 
-			//listen for the "onClick" event
-			go_button.addEventListener('click', function onClick() {
-			go_button.style.display = 'none';
+			//listen for the "onClick" event, hide button after click
+			get_button.addEventListener('click', function onClick() {
+			get_button.style.display = 'none';
 			});
 		</script>
 		</body>

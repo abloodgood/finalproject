@@ -26,7 +26,7 @@ function validateForm()
     var phone = document.getElementById("phone");
     var phoneRegExp = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
 
-    if (!(phoneRegExp.test(phone))) {
+    if (!(phoneRegExp.test(phone.value))) {
         alert("Please enter a valid phone number.")
         phone.style.borderColor = "red";
         return false;

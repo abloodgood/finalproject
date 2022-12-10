@@ -58,7 +58,7 @@ main {
   flex-direction: column;
 }
 
-#form-wrapper {
+#form-container {
   display: flex;
   align-items: center; 
   justify-content: center; 

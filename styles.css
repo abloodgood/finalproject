@@ -22,10 +22,6 @@ input[type=text]:focus {
   font-family: Arial;
 }
 
-#selector select {
-  display: none; 
-}
-
 .select-selected {
   background-color: plum;
 }

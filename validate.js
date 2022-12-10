@@ -5,3 +5,8 @@ function checkvalue(val)
     else
        document.getElementById('contactOther').style.display='none'; 
 }
+
+function validateForm() 
+{
+    
+}

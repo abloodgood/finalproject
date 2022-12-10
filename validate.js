@@ -10,7 +10,7 @@ function validateForm()
 {	
 	var contact_name = document.getElementById("name");
 
-	var letters = /^[a-zA-Z]+$/;
+	var letters = /^[A-Za-z\s]*$/;
 	if (!letters.test(contact_name.value)) {
 		alert("Names must contain letters!");
 		contact_name.style.borderColor = "red";

@@ -13,7 +13,7 @@
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./aboutme.html">About Me</a></li>
                     <li><a href="./resume.html">Resume</a></li>
-                    <li><a href="#">My Favorite Places</a></li>
+                    <li><a href="./myfavplaces.html">My Favorite Places</a></li>
                     <li><a href="#">Contact Me</a></li>
                 </ul>
                 </nav>
@@ -29,12 +29,17 @@
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name"><br>
 
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+
+            
+
             <select name="contactType" onchange='checkvalue(this.value)'> 
                 <option>Contact Type: </option>  
                 <option value="op">Job Opportunity</option>
                 <option value="network">Networking</option>
                 <option value="general">General</option>
-                <option value="other">Other</option>
+                <option value="other">Other (Enter Below)</option>
             </select> 
             <input type="text" name="contactType" id="contactOther" style='display:none'/>
 

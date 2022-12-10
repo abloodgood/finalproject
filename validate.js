@@ -8,5 +8,5 @@ function checkvalue(val)
 
 function validateForm() 
 {
-    
+    return true;
 }

@@ -20,6 +20,11 @@ input[type=text]:focus {
 #selector {
   position: relative;
   font-family: Arial;
+  width: 25%;
+  padding: 10px 15px;
+  margin: 8px 0;
+	border-radius:10px;
+  box-sizing: border-box;
 }
 
 .select-selected {

@@ -12,7 +12,7 @@ function validateForm()
 
 	var letters = /^[a-zA-Z]+$/;
 	if (!letters.test(contact_name.value)) {
-		alert("Names can only contain letters!");
+		alert("Names must contain letters!");
 		contact_name.style.borderColor = "red";
 		return false;
 	}
@@ -20,7 +20,7 @@ function validateForm()
     var phoneRegExp = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
 
     if (!(phoneRegExp.test(phone.value))) {
-        alert("Please enter a valid phone number.")
+        alert("Please enter a valid, 10 digit phone number.")
         phone.style.borderColor = "red";
         return false;
     }

@@ -201,3 +201,11 @@ color: black;
     background-color: #cccaca;
     color: black;
   }
+
+  @page {
+    background-color: white;
+  }
+
+  @page button {
+    display: none;
+  }

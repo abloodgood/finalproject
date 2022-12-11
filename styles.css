@@ -216,4 +216,17 @@ color: black;
     align-items: flex-start;
     text-align: left;
   }
+  
+nav ul {
+  display: block;
+  list-style: none;
+  }
+  
+  nav ul li 
+  {
+    display: block;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+  }
 }

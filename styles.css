@@ -202,16 +202,16 @@ color: black;
     color: black;
   }
 
-  @page {
-    background-color: white;
-  }
-
-  @page button {
-    display: none;
-  }
-
-  @page nav {
-    display: none;
+  @media print {
+    body{
+      background-color: white;
+    }
+    nav {
+      display: none;
+    }
+    button {
+      display: none;
+    }
   }
 
   @media (min-width: 200px) and (max-width: 600px) {

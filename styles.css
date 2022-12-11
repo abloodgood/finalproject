@@ -210,8 +210,10 @@ color: black;
 @media (min-width: 200px) and (max-width: 600px) {
   /*fix nav to left side*/
   .wrapper {
-    display: block;
-    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     text-align: left;
   }
 }

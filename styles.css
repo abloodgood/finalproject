@@ -209,3 +209,9 @@ color: black;
   @page button {
     display: none;
   }
+
+  @page nav {
+    display: none;
+  }
+
+  

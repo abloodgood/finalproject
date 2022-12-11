@@ -216,10 +216,8 @@ color: black;
 
   @media (min-width: 200px) and (max-width: 600px) {
     nav {
-      display:flex;
-      align-items: flex-start;
-      justify-content: flex-start;
-      flex: 1;
+      display: block;
+      float: left;
       text-align: left;
     }
 }

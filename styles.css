@@ -1,10 +1,11 @@
-body {
-  background-image: url('Media/background_image.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+/*form styles*/
+#form-container {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  flex-direction: column;
 }
 
-/*form styles*/
 input[type=text] {
   padding: 5px 10px;
   margin: 8px 0;
@@ -30,14 +31,26 @@ input[type=text]:focus {
   box-sizing: border-box;
 }
 
+/*main tag styles*/
+body {
+  background-image: url('Media/background_image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 p {
 margin-left: 15px;
 margin-right: 15px;
 }
-
+h1 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
 main {
   overflow-y: auto;
 }
+
+/*wrapper styles*/
 .wrapper {
   display: flex;
   justify-content: left;
@@ -48,14 +61,13 @@ main {
   justify-content: center; 
   flex-direction: column;
 }
-
-#form-container {
-  display: flex;
-  align-items: center; 
-  justify-content: center; 
-  flex-direction: column;
+.container {
+  max-width: 1400px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
+/*img styles*/
 #favPlace img{
   width: 500px;
   margin-bottom: 10px;
@@ -74,12 +86,12 @@ main {
   border: 5px black;
 }
 
-.container {
-  max-width: 1400px;
-  flex-wrap: wrap;
-  justify-content: space-around;
+#profile-pic {
+  text-align: center; 
+  margin: auto;
 }
 
+/*nav styles*/
 nav {
   display:flex;
   align-items: center;
@@ -102,11 +114,7 @@ nav ul li
   font-size: 20px;
 }
 
-#profile-pic {
-  text-align: center; 
-  margin: auto;
-}
-
+/*about me box style*/
 #about {
 background-color: #f8edfb;
 border-radius: 20px;
@@ -118,12 +126,6 @@ display: flex;
 align-content: center;
 justify-content: center;
 flex-direction: column;
-}
-
-h1 {
-  font-size: 22px;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*link styles*/
@@ -141,30 +143,31 @@ text-decoration: underline black;
 color: black;
 }
 
-  /* Clear floats after the columns */
-  #resume_container:after {
-    content: "";
-    display: block;
-    clear: both;
-  }
+/* resume page styles*/
+#resume_container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
-  #jsonData_degrees {
-    text-align: center;
-    float: left;
-    width: 33.33%;
-    }
+#jsonData_degrees {
+  text-align: center;
+  float: left;
+  width: 33.33%;
+}
     
-    #jsonData_jobs {
-    text-align: center;
-    float:left;
-    width: 33.33%;
-    }
+#jsonData_jobs {
+  text-align: center;
+  float:left;
+  width: 33.33%;
+}
     
-    #jsonData_skills {
-      text-align: center;
-      float: right;
-      width: 33.33%;
-    }
+#jsonData_skills {
+  text-align: center;
+  float: right;
+  width: 33.33%;
+}
+
 /*Button styles*/
   .button {
     text-align: center;
@@ -190,22 +193,25 @@ color: black;
     color: black;
   }
 
-  @media print {
-    body{
-      background-color: white;
-    }
-    .wrapper {
-      display: none;
-    }
-    button {
-      display: none;
-    }
+  /*print styles*/
+@media print {
+  body{
+    background-color: white;
   }
+  .wrapper {
+    display: none;
+  }
+  button {
+    display: none;
+  }
+}
 
-  @media (min-width: 200px) and (max-width: 600px) {
-    nav {
-      display: block;
-      float: left;
-      text-align: left;
-    }
+  /*small screen style*/
+@media (min-width: 200px) and (max-width: 600px) {
+  /*fix nav to left side*/
+  .wrapper {
+    display: block;
+    float: left;
+    text-align: left;
+  }
 }

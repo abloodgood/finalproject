@@ -91,6 +91,13 @@ main {
   margin: auto;
 }
 
+#findme img {
+  width: 500px;
+  border: 20px black;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
 /*nav styles*/
 nav {
   display:flex;

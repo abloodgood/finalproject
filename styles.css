@@ -93,7 +93,7 @@ main {
 
 #findme img {
   width: 500px;
-  border: 20px black;
+  border: 30px black;
   margin-bottom: 10px;
   margin-right: 10px;
 }
@@ -148,6 +148,10 @@ a:hover {
 background-color: white;
 text-decoration: underline black;
 color: black;
+}
+
+#findme a {
+  background-color: black;
 }
 
 /* resume page styles*/
